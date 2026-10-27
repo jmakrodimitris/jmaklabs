@@ -61,14 +61,15 @@
     @keyframes home-arrive { from { opacity: 0; translate: 0 -8px; } to { opacity: 1; translate: 0 0; } }
     @keyframes home-shimmer { 0%, 65% { transform: translateX(-140%); } 90%, 100% { transform: translateX(140%); } }
     @media (prefers-reduced-motion: reduce) { .home-button, .home-button::before { animation: none; transition: none; } .home-button:hover, .home-button:active { transform: none; } }
-    .brand-wordmark{position:absolute;top:18px;right:24px;width:150px;text-align:center;color:#fff;text-shadow:0 3px 10px #0008;pointer-events:none}.brand-main{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-2px;line-height:1.05;transform:skew(-8deg)}.brand-sub{display:block;margin-top:5px;font-size:12px;font-weight:600;letter-spacing:5px;white-space:nowrap}
+    .brand-wordmark{position:absolute;top:18px;right:24px;width:150px;text-align:center;color:#fff;text-shadow:0 3px 10px #0008;text-decoration:none;z-index:10}.brand-main{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-2px;line-height:1.05;transform:skew(-8deg)}.brand-sub{display:block;margin-top:5px;font-size:12px;font-weight:600;letter-spacing:5px;white-space:nowrap}
     @media (max-width: 600px) { .brand-wordmark { right: 16px; width: 125px; } .brand-main { font-size: 40px; } .brand-sub { font-size: 10px; letter-spacing: 4px; } }
     body { padding-top: 110px; }
     @media print { .brand-wordmark { display: none; } body { padding-top: 0; } }
-  </style>
+  .brand-wordmark:focus-visible { outline: 3px solid #edc393; outline-offset: 6px; border-radius: 4px; }
+</style>
 </head>
 <body>
-  <div class="brand-wordmark" aria-label="JMAK Labs"><span class="brand-main">JMAK</span><span class="brand-sub">— LABS —</span></div>
+  <a class="brand-wordmark" href="https://jmaklabs.com/" aria-label="JMAK Labs home"><span class="brand-main">JMAK</span><span class="brand-sub">— LABS —</span></a>
   <a class="home-button" href="https://jmaklabs.com">Home</a>
   <main>
     <header>

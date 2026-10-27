@@ -14,6 +14,9 @@
     body::after { content: ""; position: fixed; inset: 0; z-index: -1; background: linear-gradient(180deg, rgb(3 10 16 / 8%) 35%, rgb(3 10 16 / 20%) 60%, rgb(3 10 16 / 85%) 100%); }
     main { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 2rem 1.25rem max(2rem, env(safe-area-inset-bottom)); }
     .top-bar { position: absolute; top: max(1.25rem, env(safe-area-inset-top)); left: 1.25rem; right: 1.25rem; display: flex; flex-wrap: wrap; gap: .75rem; justify-content: flex-end; }
+    .brand-wordmark{position:absolute;top:18px;right:24px;width:150px;text-align:center;color:#fff;text-shadow:0 3px 10px #0008;pointer-events:none}.brand-main{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-2px;line-height:1.05;transform:skew(-8deg)}.brand-sub{display:block;margin-top:5px;font-size:12px;font-weight:600;letter-spacing:5px;white-space:nowrap}
+    .top-bar { right: 200px; justify-content: flex-start; }
+    @media (max-width: 600px) { .top-bar { right: 175px; gap: .5rem; } .brand-wordmark { right: 16px; width: 125px; } .brand-main { font-size: 40px; } .brand-sub { font-size: 10px; letter-spacing: 4px; } }
     .directory-button { min-height: 3rem; padding: .75rem 1.25rem; font-size: .95rem; }
     .gateway { width: min(100%, 35rem); text-align: center; padding-bottom: clamp(0rem, 4vh, 3rem); animation: arrive 900ms ease-out both; }
     .eyebrow { margin: 0 0 1rem; font-size: .7rem; font-weight: 500; letter-spacing: .32em; text-transform: uppercase; color: rgb(255 255 255 / 75%); }
@@ -37,6 +40,7 @@
   </style>
 </head>
 <body>
+  <div class="brand-wordmark" aria-label="JMAK Labs"><span class="brand-main">JMAK</span><span class="brand-sub">— LABS —</span></div>
   <header class="top-bar">
     <a class="button directory-button" href="https://jmaklabs.com/directory">PBX Directory <span aria-hidden="true">↗</span></a>
     <a class="button directory-button" href="https://jmaklabs.com/wallpapers">Wallpapers <span aria-hidden="true">↗</span></a>

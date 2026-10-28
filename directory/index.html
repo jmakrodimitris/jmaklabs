@@ -18,6 +18,8 @@
     h1 { margin: 0; font-size: clamp(27px, 5vw, 36px); letter-spacing: -.035em; line-height: 1.2; }
     .subtitle { margin: 12px 0 0; color: rgb(255 255 255 / 75%); font-size: 15px; }
     .directory { padding: 24px 32px 28px; }
+    .music-heading { margin: 28px 0 12px; color: #e7b67d; font-size: 20px; }
+    .music-range { margin: 0 0 16px; color: rgb(255 255 255 / 75%); font-size: 14px; }
     table { width: 100%; border: 1px solid rgb(255 255 255 / 30%); border-spacing: 0; border-radius: 10px; overflow: hidden; font-size: 15px; }
     th { padding: 14px 20px; background: rgb(231 182 125 / 12%); color: #d7b48e; font-size: 11px; text-transform: uppercase; letter-spacing: .13em; text-align: left; }
     th:last-child, td:last-child { text-align: right; border-left: 1px solid rgb(255 255 255 / 17%); width: 135px; }
@@ -80,7 +82,8 @@
       <p class="subtitle">JmakLabs PBX Extension Directory</p>
     </header>
     <div class="directory">
-      <table aria-label="FreePBX extensions">
+      <h2 class="music-heading" id="extensions-heading" style="margin-top: 0;">Extensions</h2>
+      <table aria-labelledby="extensions-heading">
         <thead><tr><th scope="col">Name</th><th scope="col">Extension</th></tr></thead>
         <tbody>
           <tr><td>JmakLabs</td><td>42000</td></tr>
@@ -92,6 +95,12 @@
           <tr><td>Evan</td><td>45151</td></tr>
           <tr><td>Evan's IVR</td><td>6-22000</td></tr>
           <tr><td>Shared Line</td><td>48324</td></tr>
+        </tbody>
+      </table>
+      <h2 class="music-heading" id="music-heading">Music Extensions</h2>
+      <table aria-labelledby="music-heading">
+        <thead><tr><th scope="col">Name</th><th scope="col">Extension</th></tr></thead>
+        <tbody>
           <tr><td>Morgan Wallen - Don't We</td><td>50500</td></tr>
           <tr><td>Toby Keith - Courtisy of the Red, White, and Blue</td><td>50501</td></tr>
           <tr><td>polyphony_digital - mc fish yodel</td><td>50502</td></tr>

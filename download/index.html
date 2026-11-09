@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Special Offer — Parody Demo</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background: repeating-linear-gradient(
+        135deg, #160c31 0 12px, #201041 12px 24px
+      );
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 0.75rem;
+      background: #ffda00;
+      color: #290b24;
+      font: bold 0.9rem monospace;
+    }
+
+    main {
+      align-self: center;
+      display: grid;
+      justify-items: center;
+      gap: 0.85rem;
+      padding: 1.5rem 0.75rem;
+    }
+
+    h1 {
+      margin: 0;
+      color: #fff646;
+      font: 900 clamp(1.55rem, 5vw, 3.5rem)/1 Impact, "Arial Black", sans-serif;
+      text-shadow: 3px 3px #c31965;
+    }
+
+    .urgency {
+      margin: 0;
+      padding: 0.35rem 0.65rem;
+      background: #c20b37;
+      font: bold 0.95rem monospace;
+    }
+
+    button {
+      width: min(94%, 900px);
+      min-height: 220px;
+      padding: 0.5rem;
+      border: 5px outset #b7ff62;
+      border-radius: 0.85rem;
+      background: linear-gradient(#c6ff1c, #45e600 48%, #32c900 49%, #24af00);
+      box-shadow: 0 0 22px #72ff00a8, 0 7px #166800;
+      color: #123800;
+      font: 900 clamp(2.25rem, 10vw, 7rem)/1 Impact, "Arial Black", sans-serif;
+      text-shadow: 1px 2px #c1ff8d;
+      cursor: pointer;
+    }
+
+    button:hover {
+      filter: brightness(1.15);
+    }
+
+    button:active {
+      transform: translateY(4px);
+    }
+
+    button:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 6px;
+    }
+
+    .badges,
+    output {
+      color: #e7d5ff;
+      font: bold 0.8rem monospace;
+    }
+
+    output {
+      min-height: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>⚠ SPECIAL OFFER · PARODY DEMO ⚠</header>
+
+  <main>
+    <h1>CONGRATULATIONS, VISITOR #1,000,000!</h1>
+    <p class="urgency">OFFER EXPIRES IN 00:07</p>
+    <button id="download" type="button">DOWNLOAD</button>
+    <div class="badges">★ 100% FREE &nbsp; ★ TOTALLY OFFICIAL</div>
+    <output id="status" aria-live="polite"></output>
+  </main>
+
+  <script>
+    const button = document.getElementById("download");
+    const status = document.getElementById("status");
+
+    button.addEventListener("click", () => {
+      status.textContent = "Parody demo. Downloads are disabled.";
+    });
+  </script>
+</body>
+</html>

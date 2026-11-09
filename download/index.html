@@ -29,7 +29,7 @@
       align-self: center;
       display: grid;
       justify-items: center;
-      gap: 0.85rem;
+      gap: 1rem;
       padding: 1.5rem 0.75rem;
     }
 
@@ -47,7 +47,10 @@
       font: bold 0.95rem monospace;
     }
 
-    button {
+    .download-button {
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
       width: min(94%, 900px);
       min-height: 220px;
       padding: 0.5rem;
@@ -57,31 +60,27 @@
       box-shadow: 0 0 22px #72ff00a8, 0 7px #166800;
       color: #123800;
       font: 900 clamp(2.25rem, 10vw, 7rem)/1 Impact, "Arial Black", sans-serif;
+      text-decoration: none;
       text-shadow: 1px 2px #c1ff8d;
-      cursor: pointer;
     }
 
-    button:hover {
+    .download-button:hover {
       filter: brightness(1.15);
     }
 
-    button:active {
+    .download-button:active {
       transform: translateY(4px);
     }
 
-    button:focus-visible {
+    .download-button:focus-visible {
       outline: 3px solid white;
       outline-offset: 6px;
     }
 
-    .badges,
-    output {
+    .badges {
+      margin: 0;
       color: #e7d5ff;
       font: bold 0.8rem monospace;
-    }
-
-    output {
-      min-height: 1em;
     }
   </style>
 </head>
@@ -91,18 +90,13 @@
   <main>
     <h1>CONGRATULATIONS, VISITOR #1,000,000!</h1>
     <p class="urgency">OFFER EXPIRES IN 00:07</p>
-    <button id="download" type="button">DOWNLOAD</button>
-    <div class="badges">★ 100% FREE &nbsp; ★ TOTALLY OFFICIAL</div>
-    <output id="status" aria-live="polite"></output>
+
+    <a
+      class="download-button"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;list=RDdQw4w9WgXcQ&amp;start_radio=1"
+    >DOWNLOAD</a>
+
+    <p class="badges">★ 100% FREE &nbsp; ★ TOTALLY OFFICIAL</p>
   </main>
-
-  <script>
-    const button = document.getElementById("download");
-    const status = document.getElementById("status");
-
-    button.addEventListener("click", () => {
-      status.textContent = "Parody demo. Downloads are disabled.";
-    });
-  </script>
 </body>
 </html>

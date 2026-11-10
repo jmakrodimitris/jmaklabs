@@ -3,24 +3,240 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#09131b">
+<meta name="theme-color" content="#030711">
 <title>Wallpapers | JMAK Labs</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20160%2080%22%3E%3Ctext%20x%3D%2278%22%20y%3D%2249%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Impact%2CArial%20Black%2Csans-serif%22%20font-size%3D%2256%22%20font-weight%3D%22900%22%20font-style%3D%22italic%22%20letter-spacing%3D%22-2%22%3EJMAK%3C%2Ftext%3E%3Ctext%20x%3D%2280%22%20y%3D%2272%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22system-ui%2CArial%2Csans-serif%22%20font-size%3D%2214%22%20font-weight%3D%22600%22%20letter-spacing%3D%225%22%3E%E2%80%94%20LABS%20%E2%80%94%3C%2Ftext%3E%3C%2Fsvg%3E">
 <style>
-:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#09131b;color:#eef3f5}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#243c48,transparent 70%);min-height:100vh}a{color:inherit} .home,button{display:inline-block;border:1px solid #b99469;border-radius:10px;background:#13232d;color:#edc393;padding:12px 18px;text-decoration:none;font:inherit;cursor:pointer}.home{margin:20px}main{max-width:1150px;margin:20px auto;padding:0 24px 60px}h1{font-size:clamp(34px,6vw,58px);letter-spacing:-.045em;margin:12px 0}.eyebrow{color:#edc393;letter-spacing:.18em;font-size:12px;text-transform:uppercase}.intro,#status{color:#afc1ca;line-height:1.6}.tools{display:flex;gap:12px;margin:28px 0 16px}input{flex:1;min-width:0;background:#12242f;color:white;border:1px solid #46606e;border-radius:10px;padding:14px;font:inherit}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #edc393;outline-offset:4px}details{margin:12px 0;border:1px solid #344b58;border-radius:12px;background:#10212bd9;padding:14px}summary{cursor:pointer;overflow-wrap:anywhere;font-weight:600;color:#edc393}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:16px}.file{display:flex;flex-direction:column;overflow:hidden;border:1px solid #344b58;border-radius:12px;text-decoration:none;background:#172c38}.file:hover{border-color:#edc393}.file img{width:100%;height:160px;object-fit:cover;background:#0a1820}.icon{display:grid;place-items:center;height:100px;color:#edc393;font-size:28px}.name{padding:14px;overflow-wrap:anywhere;font-size:14px}.empty{padding:24px 0;color:#afc1ca}@media(max-width:480px){main{padding:0 16px 40px}.tools{flex-wrap:wrap}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.file img{height:130px}}@media(prefers-reduced-motion:no-preference){.file{transition:border-color .2s}}
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#09131b;color:#eef3f5}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#243c48,transparent 70%);min-height:100vh}a{color:inherit} button{display:inline-block;border:1px solid #b99469;border-radius:10px;background:#13232d;color:#edc393;padding:12px 18px;text-decoration:none;font:inherit;cursor:pointer}main{max-width:1150px;margin:20px auto;padding:0 24px 60px}h1{font-size:clamp(34px,6vw,58px);letter-spacing:-.045em;margin:12px 0}.eyebrow{color:#edc393;letter-spacing:.18em;font-size:12px;text-transform:uppercase}.intro,#status{color:#afc1ca;line-height:1.6}.tools{display:flex;gap:12px;margin:28px 0 16px}input{flex:1;min-width:0;background:#12242f;color:white;border:1px solid #46606e;border-radius:10px;padding:14px;font:inherit}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #edc393;outline-offset:4px}details{margin:12px 0;border:1px solid #344b58;border-radius:12px;background:#10212bd9;padding:14px}summary{cursor:pointer;overflow-wrap:anywhere;font-weight:600;color:#edc393}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:16px}.file{display:flex;flex-direction:column;overflow:hidden;border:1px solid #344b58;border-radius:12px;text-decoration:none;background:#172c38}.file:hover{border-color:#edc393}.file img{width:100%;height:160px;object-fit:cover;background:#0a1820}.icon{display:grid;place-items:center;height:100px;color:#edc393;font-size:28px}.name{padding:14px;overflow-wrap:anywhere;font-size:14px}.empty{padding:24px 0;color:#afc1ca}@media(max-width:480px){main{padding:0 16px 40px}.tools{flex-wrap:wrap}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.file img{height:130px}}@media(prefers-reduced-motion:no-preference){.file{transition:border-color .2s}}
 
-.brand-wordmark{position:absolute;top:18px;right:24px;width:150px;text-align:center;color:#fff;text-shadow:0 3px 10px #0008;text-decoration:none;z-index:10}.brand-main{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-2px;line-height:1.05;transform:skew(-8deg)}.brand-sub{display:block;margin-top:5px;font-size:12px;font-weight:600;letter-spacing:5px;white-space:nowrap}.home{margin-right:190px} main{margin-top:35px}@media(max-width:360px){.brand-wordmark{right:16px;width:125px}.brand-main{font-size:40px}.brand-sub{font-size:10px;letter-spacing:4px}.home{margin-left:16px;margin-right:155px;padding:12px}}
+.brand-wordmark{position:absolute;top:18px;right:24px;width:150px;text-align:center;color:#fff;text-shadow:0 3px 10px #0008;text-decoration:none;z-index:10}.brand-main{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-2px;line-height:1.05;transform:skew(-8deg)}.brand-sub{display:block;margin-top:5px;font-size:12px;font-weight:600;letter-spacing:5px;white-space:nowrap}@media(max-width:360px){.brand-wordmark{right:16px;width:125px}.brand-main{font-size:40px}.brand-sub{font-size:10px;letter-spacing:4px}}
 .brand-wordmark:focus-visible { outline: 3px solid #edc393; outline-offset: 6px; border-radius: 4px; }
+    .holiday-lights {
+      position: absolute;
+      inset: 0 0 auto;
+      display: flex;
+      height: 30px;
+      pointer-events: none;
+    }
+    .holiday-lights span {
+      --bulb: #ffce81;
+      flex: 1;
+      position: relative;
+      height: 16px;
+      border-bottom: 2px solid #36534a;
+      border-radius: 0 0 50% 50%;
+    }
+    .holiday-lights span:nth-child(3n + 1) { --bulb: #ff717c; }
+    .holiday-lights span:nth-child(3n + 2) { --bulb: #84dbb6; }
+    .holiday-lights span::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 7px;
+      height: 11px;
+      border-top: 3px solid #36534a;
+      border-radius: 2px 2px 50% 50%;
+      background: var(--bulb);
+      box-shadow: 0 3px 11px var(--bulb);
+      transform: translateX(-50%);
+    }
+
+    .brand-sub { color: #ffe7da; }
+    @supports (background-clip: text) {
+      .brand-main {
+        background-image: repeating-linear-gradient(135deg, #fff8ef 0 9px, #e8475a 9px 15px);
+        background-clip: text;
+        color: transparent;
+        text-shadow: none;
+        filter: drop-shadow(0 2px 4px #000b);
+      }
+    }
+
+    #refresh {
+      background: linear-gradient(160deg, #17382f, #0c1c23 78%) padding-box,
+                  repeating-linear-gradient(135deg, #e65365 0 7px, #ffefda 7px 14px) border-box;
+      border: 2px solid transparent;
+    }
+    #refresh:hover {
+      border-color: transparent;
+      box-shadow: 0 12px 35px #0005, 0 0 16px #ffbf7b38;
+      background: linear-gradient(160deg, #215044, #112927 78%) padding-box,
+                  repeating-linear-gradient(135deg, #ff6575 0 7px, #fff5e8 7px 14px) border-box;
+    }
+    #refresh::before {
+      background: linear-gradient(110deg, transparent 42%, #ffd08c30 50%, transparent 58%) 100% 0 / 300% 100% no-repeat;
+    }
+
+    @media (max-width: 480px) {
+      .holiday-lights span:nth-child(even) { display: none; }
+    }
+    .snowfall {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .snowfall span, .landing-flake {
+      position: absolute;
+      border-radius: 50%;
+      background: #f6fbff;
+      pointer-events: none;
+    }
+    .snowfall span {
+      top: -12px;
+      left: var(--left);
+      width: var(--size);
+      height: var(--size);
+      opacity: var(--opacity);
+      box-shadow: 0 0 5px #e4f1ff70;
+      animation: snowfall var(--duration) var(--delay) linear infinite;
+    }
+    @keyframes snowfall {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(var(--drift), calc(100vh + 24px), 0); }
+    }
+
+    #refresh::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 18%;
+      width: 48%;
+      height: 6px;
+      border-radius: 65% 85% 36% 48%;
+      background: linear-gradient(#fff, #c9e3ff);
+      box-shadow: 0 2px 5px #b5d8ff50;
+      pointer-events: none;
+    }
+
+    .landing-flake {
+      top: -7px;
+      left: 46%;
+      width: 4px;
+      height: 4px;
+      opacity: 0;
+      animation: settle-on-button 5.8s linear infinite;
+    }
+    @keyframes settle-on-button {
+      0%, 38% { opacity: 0; transform: translate(-9px, -25px); }
+      47% { opacity: .8; }
+      73% { opacity: .9; transform: translate(0, 0); }
+      85% { opacity: 0; transform: translate(0, 0); }
+      100% { opacity: 0; }
+    }
+    @media (max-width: 480px) {
+      .snowfall span:nth-child(3n) { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .snowfall, .landing-flake { display: none; }
+    }
+    @keyframes shimmer {
+      0%, 65% { background-position: 100% 0; }
+      90%, 100% { background-position: 0 0; }
+    }
+
+    :root { background: #030711; color: #fff8ed; }
+    body {
+      isolation: isolate;
+      background: radial-gradient(ellipse at 50% 38%, #0a1424 0%, #030711 68%);
+    }
+    .brand-wordmark { top: 46px; }
+    main { margin-top: 0; padding-top: 7.5rem; }
+    .holiday-header { text-align: center; }
+    .holiday-art {
+      display: block;
+      width: 100%;
+      max-width: 34rem;
+      height: auto;
+      margin: 0 auto;
+      mask-image: linear-gradient(to right, transparent, #000 19%, #000 81%, transparent),
+                  linear-gradient(to bottom, transparent, #000 15%, #000 76%, transparent);
+      mask-composite: intersect;
+    }
+
+    .eyebrow, summary, .icon { color: #ffd09b; }
+    .intro, #status, .empty { color: #ced9e8; }
+    input { border-color: #506a60; background: #0c1c23; }
+    details { border-color: #36534a; background: #10241fd9; }
+    .file { border-color: #36534a; background: #17382f; }
+    .file:hover { border-color: #ffd09b; }
+    #refresh { position: relative; color: #fff8ed; }
+    #refresh::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      animation: shimmer 7s ease-in-out infinite;
+    }
+    #refresh:disabled { opacity: .65; cursor: wait; }
+    @media (prefers-reduced-motion: reduce) {
+      #refresh::before { animation: none; }
+    }
 </style>
 </head>
 <body>
+  <div class="snowfall" aria-hidden="true">
+    <span style="--left: 2.1%; --size: 4.5px; --opacity: 0.42; --duration: 14.5s; --delay: -12.7s; --drift: 19px"></span>
+    <span style="--left: 4.2%; --size: 4.3px; --opacity: 0.34; --duration: 15.7s; --delay: -8.9s; --drift: -50px"></span>
+    <span style="--left: 4.8%; --size: 4.1px; --opacity: 0.70; --duration: 17.1s; --delay: -8.7s; --drift: 39px"></span>
+    <span style="--left: 7.5%; --size: 4.8px; --opacity: 0.57; --duration: 21.3s; --delay: -11.0s; --drift: 5px"></span>
+    <span style="--left: 11.3%; --size: 3.9px; --opacity: 0.37; --duration: 11.2s; --delay: -6.6s; --drift: -9px"></span>
+    <span style="--left: 12.9%; --size: 3.9px; --opacity: 0.35; --duration: 14.2s; --delay: -5.7s; --drift: -54px"></span>
+    <span style="--left: 13.9%; --size: 4.6px; --opacity: 0.34; --duration: 16.2s; --delay: -2.8s; --drift: 42px"></span>
+    <span style="--left: 17.7%; --size: 4.6px; --opacity: 0.53; --duration: 17.0s; --delay: -13.7s; --drift: 16px"></span>
+    <span style="--left: 19.3%; --size: 2.2px; --opacity: 0.70; --duration: 16.1s; --delay: -4.5s; --drift: -56px"></span>
+    <span style="--left: 22.3%; --size: 3.1px; --opacity: 0.76; --duration: 21.8s; --delay: -0.4s; --drift: 58px"></span>
+    <span style="--left: 24.1%; --size: 3.1px; --opacity: 0.35; --duration: 12.6s; --delay: -1.6s; --drift: -51px"></span>
+    <span style="--left: 25.4%; --size: 3.9px; --opacity: 0.38; --duration: 12.8s; --delay: -11.8s; --drift: 51px"></span>
+    <span style="--left: 28.1%; --size: 2.5px; --opacity: 0.58; --duration: 21.4s; --delay: -13.2s; --drift: 7px"></span>
+    <span style="--left: 30.4%; --size: 3.1px; --opacity: 0.55; --duration: 16.3s; --delay: -7.6s; --drift: -8px"></span>
+    <span style="--left: 32.6%; --size: 5.0px; --opacity: 0.37; --duration: 15.4s; --delay: -11.6s; --drift: -9px"></span>
+    <span style="--left: 34.2%; --size: 4.9px; --opacity: 0.69; --duration: 13.8s; --delay: -12.6s; --drift: 11px"></span>
+    <span style="--left: 38.1%; --size: 2.8px; --opacity: 0.37; --duration: 10.2s; --delay: -8.3s; --drift: 13px"></span>
+    <span style="--left: 38.8%; --size: 4.4px; --opacity: 0.65; --duration: 19.4s; --delay: -0.6s; --drift: 53px"></span>
+    <span style="--left: 42.3%; --size: 2.2px; --opacity: 0.51; --duration: 21.3s; --delay: -20.6s; --drift: 27px"></span>
+    <span style="--left: 44.4%; --size: 2.4px; --opacity: 0.76; --duration: 17.8s; --delay: -17.3s; --drift: -51px"></span>
+    <span style="--left: 45.9%; --size: 3.7px; --opacity: 0.72; --duration: 18.3s; --delay: -16.4s; --drift: -41px"></span>
+    <span style="--left: 49.1%; --size: 2.0px; --opacity: 0.65; --duration: 10.9s; --delay: -5.5s; --drift: -33px"></span>
+    <span style="--left: 51.6%; --size: 4.1px; --opacity: 0.45; --duration: 13.2s; --delay: -6.1s; --drift: -25px"></span>
+    <span style="--left: 53.1%; --size: 2.8px; --opacity: 0.35; --duration: 19.5s; --delay: -3.1s; --drift: 47px"></span>
+    <span style="--left: 55.7%; --size: 2.0px; --opacity: 0.45; --duration: 15.2s; --delay: -11.3s; --drift: -44px"></span>
+    <span style="--left: 57.9%; --size: 2.2px; --opacity: 0.54; --duration: 14.1s; --delay: -5.1s; --drift: 2px"></span>
+    <span style="--left: 60.1%; --size: 2.9px; --opacity: 0.76; --duration: 10.6s; --delay: -1.6s; --drift: -9px"></span>
+    <span style="--left: 61.5%; --size: 2.3px; --opacity: 0.38; --duration: 10.8s; --delay: -6.3s; --drift: 4px"></span>
+    <span style="--left: 65.8%; --size: 2.4px; --opacity: 0.36; --duration: 10.1s; --delay: -8.7s; --drift: 18px"></span>
+    <span style="--left: 68.0%; --size: 4.9px; --opacity: 0.74; --duration: 13.8s; --delay: -0.6s; --drift: 46px"></span>
+    <span style="--left: 70.4%; --size: 2.3px; --opacity: 0.58; --duration: 14.5s; --delay: -8.6s; --drift: -48px"></span>
+    <span style="--left: 72.2%; --size: 4.2px; --opacity: 0.35; --duration: 18.5s; --delay: -17.9s; --drift: -53px"></span>
+    <span style="--left: 73.2%; --size: 2.2px; --opacity: 0.76; --duration: 19.6s; --delay: -14.9s; --drift: 37px"></span>
+    <span style="--left: 75.6%; --size: 4.7px; --opacity: 0.63; --duration: 17.5s; --delay: -6.8s; --drift: -16px"></span>
+    <span style="--left: 77.4%; --size: 2.2px; --opacity: 0.65; --duration: 16.7s; --delay: -8.4s; --drift: 42px"></span>
+    <span style="--left: 79.9%; --size: 3.5px; --opacity: 0.37; --duration: 16.4s; --delay: -7.4s; --drift: 16px"></span>
+    <span style="--left: 83.6%; --size: 3.1px; --opacity: 0.68; --duration: 17.8s; --delay: -17.1s; --drift: 2px"></span>
+    <span style="--left: 85.2%; --size: 3.3px; --opacity: 0.78; --duration: 12.3s; --delay: -0.8s; --drift: 49px"></span>
+    <span style="--left: 87.3%; --size: 2.9px; --opacity: 0.48; --duration: 20.7s; --delay: -20.7s; --drift: -42px"></span>
+    <span style="--left: 88.7%; --size: 3.5px; --opacity: 0.64; --duration: 15.1s; --delay: -11.1s; --drift: -19px"></span>
+    <span style="--left: 92.3%; --size: 4.5px; --opacity: 0.72; --duration: 13.3s; --delay: -4.8s; --drift: 48px"></span>
+    <span style="--left: 94.0%; --size: 3.4px; --opacity: 0.34; --duration: 21.3s; --delay: -0.5s; --drift: -48px"></span>
+    <span style="--left: 96.3%; --size: 4.4px; --opacity: 0.61; --duration: 11.4s; --delay: -10.2s; --drift: 39px"></span>
+    <span style="--left: 98.5%; --size: 4.8px; --opacity: 0.44; --duration: 10.3s; --delay: -3.2s; --drift: -58px"></span>
+  </div>
+  <div class="holiday-lights" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
 <a class="brand-wordmark" href="https://jmaklabs.com/" aria-label="JMAK Labs home"><span class="brand-main">JMAK</span><span class="brand-sub">— LABS —</span></a>
-<span class="home" aria-hidden="true" style="visibility:hidden;pointer-events:none">← Home Page</span>
 <main>
-<p class="eyebrow">JMAK Labs · Collection</p>
+<header class="holiday-header">
+<img class="holiday-art" src="backgrounds/jmaklabs_christmas.png" width="800" height="480" alt="">
+<p class="eyebrow">Merry Christmas from JMAK Labs!</p>
 <h1>Wallpapers</h1>
 <p class="intro">Explore the collection. Open a wallpaper to view or save the original.</p>
-<div class="tools"><input id="search" type="search" aria-label="Search files and folders" placeholder="Search files and folders…"><button id="refresh" type="button">Refresh</button></div>
+</header>
+<div class="tools"><input id="search" type="search" aria-label="Search files and folders" placeholder="Search files and folders…"><button id="refresh" type="button"><span class="landing-flake" aria-hidden="true"></span>Refresh</button></div>
 <p id="status" role="status" aria-live="polite">Loading collection…</p>
 <section id="collection" aria-label="Files and folders"></section>
 </main>
@@ -69,7 +285,7 @@ function render() {
     const grid = document.createElement('div'); grid.className='grid';
     for (const item of node.files.sort((a,b)=>a.path.localeCompare(b.path))) {
       const link = document.createElement('a'); link.className='file';
-      link.href = '/'+ROOT+item.path.split('/').map(encodeURIComponent).join('/');
+      link.href = './'+item.path.split('/').map(encodeURIComponent).join('/');
       link.target='_blank'; link.rel='noopener';
       if (imagePattern.test(item.path)) {
         const img=document.createElement('img'); img.alt=''; img.loading='lazy';
@@ -91,7 +307,7 @@ async function refresh() {
     if (!branch) branch=(await getJSON(API)).default_branch;
     const data=await getJSON(API+'/git/trees/'+encodeURIComponent(branch)+'?recursive=1');
     if (data.truncated) throw new Error('This repository is too large for a complete listing. Please use the GitHub folder to browse all files.');
-    const next=data.tree.filter(item=>item.path.startsWith(ROOT) && ['blob','tree'].includes(item.type) && item.path!==ROOT+'index.html').map(item=>({...item,path:item.path.slice(ROOT.length)}));
+    const next=data.tree.filter(item=>item.path.startsWith(ROOT) && ['blob','tree'].includes(item.type) && !/^wallpapers\/index(?:_\d+)?\.html$/.test(item.path)).map(item=>({...item,path:item.path.slice(ROOT.length)}));
     const nextSignature=JSON.stringify(next.map(item=>[item.path,item.sha]));
     if (!loaded || nextSignature!==signature) {entries=next;signature=nextSignature;render();}
     loaded=true;

@@ -208,7 +208,17 @@
       header { background: #0a1424; border-top-color: #84dbb6; }
       .banner-title {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr) minmax(110px, 38%);
+      }
+      .banner-title > div { min-width: 0; }
+      .banner-title .holiday-art {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+        mask-image: linear-gradient(to right, transparent, #000 18%, #000 82%, transparent),
+                    linear-gradient(to bottom, transparent, #000 16%, #000 78%, transparent);
+        mask-composite: intersect;
       }
       .holiday-greeting { margin: 10px 0 0; color: #fff8ed; font-weight: 600; }
       .home-button { top: 44px; color: #fff8ed; overflow: visible; }
@@ -224,8 +234,7 @@
       .home-button::before { animation: none; }
     }
     @media screen and (max-width: 540px) {
-      .banner-title { grid-template-columns: minmax(0, 1fr); }
-      .holiday-art { max-width: 22rem; }
+      .banner-title { grid-template-columns: minmax(0, 1fr) minmax(90px, 34%); gap: 12px; }
     }
     @media print {
       .holiday-art, .holiday-greeting, .holiday-lights, .snowfall { display: none; }
@@ -294,7 +303,7 @@
           <p class="holiday-greeting">Merry Christmas from JMAK Labs!</p>
           <p class="subtitle">JmakLabs PBX Extension Directory</p>
         </div>
-        <img class="holiday-art" src="../wallpapers/backgrounds/jmaklabs_christmas.png" width="800" height="480" alt="">
+        <img class="holiday-art" src="../wallpapers/backgrounds/jmaklabs_christmas.png" width="800" height="480" alt="JMAK Labs Christmas artwork">
       </div>
     </header>
     <div class="directory">
